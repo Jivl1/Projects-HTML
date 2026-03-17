@@ -1,0 +1,127 @@
+/* Base document styling and global typography settings */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Heading hierarchy styling */
+h1 { font-size: 2.5rem; margin-bottom: 10px; }
+h2 { font-size: 1.8rem; color: #0d1b2a; margin-bottom: 10px; }
+h3 { font-size: 1.2rem; color: #0077aa; margin-bottom: 8px; }
+h4 { font-size: 1rem; margin-top: 20px; }
+h5 { font-size: 0.95rem; color: #555; }
+h6 { font-size: 0.85rem; color: #888; font-weight: normal; }
+
+/* General element styling for links and paragraphs */
+p { margin-bottom: 12px; }
+a { color: #0077aa; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Navigation layout using Flexbox */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  background-color: #0d1b2a;
+}
+
+nav ul { list-style: none; display: flex; gap: 24px; margin: 0; padding: 0; }
+nav ul a { color: #cce6ff; font-size: 0.9rem; }
+nav ul a:hover { color: #fff; text-decoration: none; }
+
+.logo { font-size: 1.4rem; font-weight: bold; color: #00aaff; }
+
+/* Layout organization for main page sections */
+section { padding: 50px 40px; max-width: 1000px; margin: 0 auto; }
+
+.hero-img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; margin-top: 30px; display: block; }
+
+.btn-group { display: flex; gap: 12px; justify-content: center; margin-top: 20px; }
+
+/* Component styling: Primary and Secondary buttons */
+.btn-primary {
+  background-color: #00aaff;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary:hover { background-color: #0088cc; color: white; text-decoration: none; }
+
+.btn-secondary {
+  background-color: transparent;
+  color: #cce6ff;
+  padding: 12px 28px;
+  border: 1px solid #cce6ff;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-secondary:hover { background-color: rgba(255,255,255,0.1); text-decoration: none; }
+
+/* Component styling: Cards for mission data */
+.cards { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 24px; }
+
+.card { background-color: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 20px; flex: 1; min-width: 240px; }
+.card ul { padding-left: 18px; margin-top: 8px; }
+.card ul li { margin-bottom: 4px; color: #555; font-size: 0.9rem; }
+
+/* Specific mission card accents using ID selectors */
+#card-orbital { border-top: 3px solid #00aaff; }
+#card-lunar   { border-top: 3px solid #7b61ff; }
+#card-deep    { border-top: 3px solid #ff6b35; }
+
+ol { padding-left: 22px; margin-bottom: 16px; }
+ol li { margin-bottom: 6px; color: #444; }
+
+/* Form layout and input element styling */
+.contact-form { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 30px; max-width: 560px; }
+.contact-form label { display: block; font-weight: bold; margin: 14px 0 4px; font-size: 0.9rem; color: #333; }
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus { border-color: #00aaff; outline: none; }
+
+.contact-form textarea { resize: vertical; }
+
+.radio-group { display: flex; gap: 16px; margin-top: 6px; flex-wrap: wrap; }
+.checkbox-row { display: flex; align-items: flex-start; gap: 8px; margin-top: 14px; }
+.checkbox-row label { font-weight: normal; margin: 0; font-size: 0.9rem; color: #555; }
+.contact-form .btn-primary { margin-top: 20px; width: 100%; text-align: center; display: block; }
+
+/* Footer styling */
+footer { background-color: #0d1b2a; color: #aaa; text-align: center; padding: 24px 40px; margin-top: 40px; }
+footer ul { list-style: none; display: flex; justify-content: center; gap: 20px; padding: 0; margin: 10px 0 0; }
+footer a { color: #cce6ff; font-size: 0.85rem; }
+
+/* Media query for mobile responsiveness */
+@media (max-width: 700px) {
+  nav { flex-direction: column; gap: 10px; padding: 14px 20px; }
+  .cards { flex-direction: column; }
+  section { padding: 30px 20px; }
+  .btn-group { flex-direction: column; align-items: center; }
+}

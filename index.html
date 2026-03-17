@@ -1,1 +1,192 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaSphere — Space Exploration</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    #hero {
+      background-color: #0d1b2a;
+      color: white;
+      padding: 60px 40px;
+      text-align: center;
+    }
+    blockquote {
+      border-left: 4px solid #00aaff;
+      padding: 10px 20px;
+      margin: 20px 0;
+      background-color: #f0f8ff;
+      font-style: italic;
+      color: #333;
+    }
+    #fleet table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    #fleet th { background-color: #0d1b2a; color: white; padding: 10px; text-align: left; }
+    #fleet td { padding: 10px; border-bottom: 1px solid #ccc; }
+    #fleet tr:nth-child(even) { background-color: #f2f2f2; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="logo">NovaSphere</a>
+    <ul>
+      <li><a href="#missions">Missions</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#fleet">Fleet</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <h1>Humanity's Gateway to the Stars</h1>
+    
+    <p style="font-size: 1.1rem; color: #aad4ff; max-width: 600px; margin: 0 auto 20px;">
+      NovaSphere is a platform for deep-space mission planning,
+      telemetry monitoring, and interplanetary exploration.
+    </p>
+
+    <div class="btn-group">
+      <a href="#contact" class="btn-primary">Begin Your Mission</a>
+      <a href="#missions" class="btn-secondary">Explore Missions</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=1200&q=80"
+         alt="Earth viewed from space with auroras" class="hero-img" />
+  </section>
+
+  <section id="missions">
+    <h2>What We Explore</h2>
+    <p>From near-Earth operations to interstellar probes, NovaSphere covers the full spectrum of space exploration.</p>
+    <div class="cards">
+      <div class="card" id="card-orbital">
+        <h3>🛰️ Orbital Operations</h3>
+        <p>Satellite deployment, station maintenance, and Earth-observation campaigns.</p>
+        <ul>
+          <li>LEO &amp; GEO mission profiles</li>
+          <li>Real-time telemetry dashboards</li>
+          <li>Debris avoidance algorithms</li>
+          <li>Solar panel output monitoring</li>
+        </ul>
+      </div>
+      <div class="card" id="card-lunar">
+        <h3>🌕 Lunar Expeditions</h3>
+        <p>Crewed and uncrewed missions targeting the lunar surface and cislunar space.</p>
+        <ul>
+          <li>Landing site analysis tools</li>
+          <li>Resource mapping overlays</li>
+          <li>Crew life-support modeling</li>
+          <li>Communication relay planning</li>
+        </ul>
+      </div>
+      <div class="card" id="card-deep">
+        <h3>🔴 Deep Space Probes</h3>
+        <p>Interplanetary trajectories to Mars, the asteroid belt, and beyond.</p>
+        <ul>
+          <li>Hohmann transfer calculators</li>
+          <li>Gravity-assist route planner</li>
+          <li>Deep Space Network scheduling</li>
+          <li>Long-duration power budgeting</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works">
+    <h2>From Concept to Orbit</h2>
+    <p>Every mission begins with a vision. Our platform guides teams through every phase.</p>
+    <blockquote>
+      "The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself."
+      <br /><cite>— Carl Sagan</cite>
+    </blockquote>
+    <ol>
+      <li>Define mission objectives &amp; target bodies</li>
+      <li>Run orbital mechanics simulations</li>
+      <li>Submit mission plan for agency review</li>
+      <li>Integrate spacecraft telemetry feeds</li>
+      <li>Monitor in real-time from Mission Control</li>
+      <li>Archive and publish scientific findings</li>
+    </ol>
+    <p>Learn more: <a href="https://solarsystem.nasa.gov" target="_blank" rel="noopener noreferrer">NASA Solar System Reference →</a></p>
+  </section>
+
+  <section id="fleet">
+    <h2>Current Spacecraft</h2>
+    <p>A full overview of the NovaSphere fleet — from experimental probes to crewed vehicles.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Vessel ID</th>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Destination</th>
+          <th>Launch Year</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>NS-001</td><td>Aether I</td><td>Orbital Station</td><td>Low Earth Orbit</td><td>2022</td><td>Active</td></tr>
+        <tr><td>NS-004</td><td>Selene Probe</td><td>Lunar Lander</td><td>Mare Imbrium</td><td>2024</td><td>In Orbit</td></tr>
+        <tr><td>NS-007</td><td>Ares Pathfinder</td><td>Mars Rover</td><td>Hellas Planitia</td><td>2025</td><td>Active</td></tr>
+        <tr><td>NS-012</td><td>Cassini II</td><td>Deep Space Probe</td><td>Saturn System</td><td>2026</td><td>Planned</td></tr>
+        <tr><td>NS-015</td><td>Horizon X</td><td>Crewed Vehicle</td><td>Lunar Gateway</td><td>2027</td><td>Planned</td></tr>
+      </tbody>
+    </table>
+    <h4>Fleet Classification Reference</h4>
+    <h5>Propulsion Systems</h5>
+    <p>Ion drives, chemical rockets, and next-gen fusion engines.</p>
+    <h6>Version: Fleet Registry v4.1 — Updated March 2026</h6>
+  </section>
+
+  <section id="contact">
+    <h2>Apply for Clearance</h2>
+    <p>Submit your application to access the NovaSphere mission planning platform.</p>
+    <form action="#" method="post" class="contact-form">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" placeholder="e.g. Yuri" required />
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name" placeholder="e.g. Gagarin" required />
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@agency.space" required />
+      
+      <label for="division">Division / Agency</label>
+      <select id="division" name="division">
+        <option value="" disabled selected>Select your division</option>
+        <option value="orbital">Orbital Operations</option>
+        <option value="lunar">Lunar Expeditions</option>
+        <option value="deep">Deep Space Probes</option>
+        <option value="research">Research &amp; Development</option>
+        <option value="comm">Communications</option>
+      </select>
+
+      <label>Clearance Level Requested</label>
+      <div class="radio-group">
+        <label><input type="radio" name="clearance" value="observer" checked /> Observer</label>
+        <label><input type="radio" name="clearance" value="analyst" /> Analyst</label>
+        <label><input type="radio" name="clearance" value="mission-ctrl" /> Mission Control</label>
+      </div>
+
+      <label for="message">Mission Statement</label>
+      <textarea id="message" name="message" rows="4" placeholder="Describe your objectives..."></textarea>
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="agree" name="agree" required />
+        <label for="agree">I agree to the <a href="#">Mission Terms &amp; Conditions</a>.</label>
+      </div>
+      <button type="submit" class="btn-primary">Submit Application</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 NovaSphere Inc. All rights reserved. <span style="color: #00aaff;">SDT104-HW6</span></p>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
